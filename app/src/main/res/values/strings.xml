@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Widgets</string>
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">释放立即刷新</string>
+    <string name="listview_loading">正在加载...</string>
+    <string name="nomore_loading">没有了</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="loading_done">加载完成</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+    <!--MaterialLogin-->
+    <string name="login">欢迎</string>
+    <string name="login_edaccount">用户名/邮箱</string>
+    <string name="login_edpwd">密码</string>
+    <string name="login_btnok">登录</string>
+    <string name="login_fogotpwd">忘记密码？</string>
+    <string name="register">注册</string>
+    <string name="register_account">请输入用户名/邮箱</string>
+    <string name="register_pwd">请输入密码</string>
+    <string name="register_pwd_again">请确认密码</string>
+    <string name="register_next">下一步</string>
+    <!--bottom navigation bar-->
+    <string name="home">首页</string>
+    <string name="search">搜索</string>
+    <string name="trade">交换</string>
+    <string name="mine">我的</string>
+
+    <string name="main_nv_description">https://github.com/cherishyan/Widgets</string>
+
+    <string name="home_tab_borrow_text">享花</string>
+    <string name="home_tab_mall_text">商城</string>
+    <string name="home_tab_cash_text">提现</string>
+    <string name="home_tab_mine_text">我的</string>
+
+</resources>

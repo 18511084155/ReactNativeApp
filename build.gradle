@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.1.2-4'
+    ext.anko_version = '0.10.0'
+    repositories {
+        jcenter()
+        maven {
+            url  "https://dl.bintray.com/cz/maven"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        // add packer-ng
+        classpath 'com.mcxiaoke.gradle:packer-ng:1.0.9'
+        //资源混淆缩小APK大小的工具
+        classpath 'com.tencent.mm:AndResGuard-gradle-plugin:1.2.3'
+        //听云
+        classpath 'com.networkbench.newlens.agent.android:agent-gradle-plugin:2.5.6'
+        //kotlin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //统计所有id/与activity插件,默认在aasets下生成两个xml映射文件
+        classpath 'quant.record.plugin:recordplugin:1.0.5'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            // All of React Native (JS, Android binaries) is installed from npm
+            url "$rootDir/node_modules/react-native/android"
+        }
+        maven { url "http://192.168.29.8:8081/repository/credit-wallet/" }
+        maven {
+            url 'https://dl.bintray.com/woodys/maven/'
+        }
+        //不是太清楚以下配置是否有效，目前暂无问题。仍需查验。
+        maven { url "https://jitpack.io" }
+        mavenCentral()
+    }
+
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

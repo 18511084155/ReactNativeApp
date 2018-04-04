@@ -1,0 +1,54 @@
+{
+  "name": "ze.wang",
+  "version": "1.0.0",
+  "description": "ios & android & react native",
+  "main": "index.js",
+  "bin": {
+    "rn-publish": "script/build.js"
+  },
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle-ios": "react-native bundle --assets-dest ./ios/MergeDemo --entry-file ./index.js --bundle-output ./ios/MergeDemo/main.jsbundle --platform ios --dev false"
+  },
+  "dependencies": {
+    "immutable": "^3.8.2",
+    "moment": "^2.20.1",
+    "query-string": "^5.0.1",
+    "react": "^16.3.1",
+    "react-logger": "^1.1.0",
+    "react-native": "^0.51.1",
+    "react-native-device-info": "^0.20.0",
+    "react-native-keyboard-aware-scroll-view": "^0.4.1",
+    "react-native-modal": "^4.1.1",
+    "react-native-scrollable-tab-view": "^0.8.0",
+    "react-native-swiper": "^1.5.13",
+    "react-navigation": "=1.0.0-beta.22",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.17.1",
+    "commander": "^2.12.2",
+    "ora": "^1.3.0",
+    "qiniu": "^7.1.1",
+    "chalk": "^2.3.0",
+    "shelljs": "^0.7.8",
+    "babel-jest": "22.0.4",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.0.4",
+    "react-test-renderer": "16.0.0",
+    "babel-eslint": "^8.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-react": "^4.2.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-react-native": "^2.2.1",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}
